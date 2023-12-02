@@ -1,0 +1,141 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  font-family: "Work Sans", sans-serif;
+}
+
+.cover {
+  background-image: url(../img/Background.png);
+  background-size: cover;
+  margin: 0;
+  height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+.cover > div{
+  display: flex;
+  justify-content: center;
+}
+.card{
+  width: 300px; 
+  /* height: 400px; */
+ /* display: flex; */
+}
+.top_of_card {
+  text-align: center;
+  font-size: 10px;
+  background-image: url(../img/Pattern.png);
+  background-color: #2454f4;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  color: white;
+}
+.top_of_card h1 {
+  font-size: 18px;
+  width: 60%;
+  /* text-align: center; */
+  margin: auto;
+  font-weight: bolder;
+  padding: 35px 0;
+}
+.first_p {
+  font-size: 11px;
+  /* width: 290px; */
+  text-align: center;
+  padding: 15px 5px 0px 5px;
+  font-weight: 600;
+  /* margin-left: auto; */
+  /* margin-right: auto; */
+}
+
+.input_sub {
+  padding: 10px 20px 10px 20px;
+  /* display: flex; */
+  /* justify-content: space-evenly; */
+  /* align-items: center; */
+  /* flex-wrap: wrap; */
+  margin: auto;
+}
+
+input {
+  background-color: #f6f7fb;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  height: 30px;
+  width: 68%;
+  padding: 15px;
+  font-size: 12px;
+}
+input:focus {
+  outline: none;
+  border: 1px solid #808286;
+}
+button {
+  background-color: #2454f4;
+  border: none;
+  border-radius: 3px;
+  height: 31px;
+  color: #f6f7fb;
+  font-size: 10px;
+  padding: 5px 15px 5px 15px;
+}
+button:hover {
+  background-color: #0c2781;
+
+}
+.text {
+  font-size: 10px;
+  text-align: left;
+  padding: 10px 5px 0px 10px;
+  margin-right: 60px;
+  color: #acafb9;
+}
+
+.info {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.info img {
+  height: 30px;
+  width: 30px;
+  margin-right: 5px;
+  /* padding: 5px; */
+}
+.info h6 {
+  margin-top: 5px;
+  font-size: 10px;
+  line-height: 13px;
+  color: #acafb9;
+}
+.info h6 span {
+  font-weight: 900;
+  color: black;
+}
+
+.second_p {
+  color: #56585c;
+  font-size: 10px;
+  font-weight: 700;
+  /* width: 300px; */
+  text-align: center;
+  padding: 10px 10px 0px 10px;
+}
+
+
+
+
+
+
+
+
+

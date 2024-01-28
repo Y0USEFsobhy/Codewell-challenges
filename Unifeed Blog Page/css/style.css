@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Manrope', sans-serif;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+.for_phone{
+    display: none;
+    transition: transform 1s ease;
+    
+}
+.nav-links {
+    display: none;
+    background-color: #333;
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: transform 3s ease;
+
+
+ }
+ .nav-links a {
+    display: block;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    
+ }
+ .nav-links a:hover {
+    background-color: #111;
+ }
+
+.nav {
+    padding: 30px 100px 30px 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.links {
+    display:flex;
+    align-items: center;
+    align-content: center;
+}
+.links a {
+    margin-left: 20px;
+    color: black;
+    opacity: 50%;
+    text-decoration: none;
+    font-weight: 500;
+}
+.links button{
+    margin-left: 15px;
+    padding: 10px ;
+    border: none;
+    background-color: #EC7C0C;
+    color: black;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 700;
+}
+.hero{
+    padding: 50px 100px 0 100px;
+    width: 100%;
+    height: fit-content;
+}
+.title{
+    width: 100%;
+    gap: 40px;
+    display: flex;
+
+}
+.image{
+    width: 40%;
+    height: fit-content;
+}
+.image img{
+    width: 100%;
+    height: 100%;
+}
+.info{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+.info h1{
+    font-weight: 700;
+    color: black;
+}
+.info p{
+    color: #666666;
+    font-weight: 500;
+    width: 70%;
+}
+.name{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+}
+.name img{
+    height: 60px;
+    width: 60px;
+
+}
+.name h6{
+    font-size: 15px;
+    color: black;
+    font-weight: 600;
+    margin-top: 10px;
+
+}
+.name h6 span{
+    color: #666666;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.blogs{
+    display: grid;
+    justify-content: center;
+    gap: 15px;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 1fr;
+    padding: 100px 0 100px 0;
+}
+.column{
+    width: 350px;
+    height: fit-content;
+    transition: transform 0.6s;
+    cursor: pointer;
+    
+}
+.column img{
+    width: 100%;
+}
+.column h3{
+    font-size: 30px;
+    font-weight: 800;
+    margin: 15px 0 10px 0;
+}
+.column p{
+    font-size: 17px;
+    font-weight: 500;
+    margin: 15px 0 10px 0;
+    color: #666666;
+}
+.avg_name {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 20px 0 10px 0;
+
+}
+.avg_name img{
+    width: 55px;
+    height: 55px;
+}
+.avg_name h5{
+    color: black;
+    font-weight: 800;
+    font-size: 15px;
+    margin: 0;
+}
+.avg_name p{
+    color: #666666;
+    font-weight: 500;
+    font-size: 13px;
+    margin: 0;
+}
+.footer{
+    width: 100%;
+    padding: 50px 100px 20px 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer h6{
+    color: #666666;
+    
+}
+.column:hover{
+    transform: translateY(-9px);
+    
+}
+.column:hover .title-c{
+    color: #EC7C0C;
+}
+.info h1:hover{
+    color: #EC7C0C;
+    transition: 0.5s;
+}
+.links a:hover{
+    color: #EC7C0C;
+}
+
+@media only screen and (max-width:767px) {
+    .nav{
+        padding: 5%;
+    }
+    .for_phone{
+        display: block;
+    }
+    .links {
+        display: none;
+    }
+    .hero{
+        padding: 0 5% 0 5%;
+    }
+    .title{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .image {
+        width: 100%;
+    }
+    .info h1,
+    .info p {
+        width: 100%;
+    }
+    .blogs{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3,1fr);
+        gap: 20px;
+        padding: 10% 0 10% 0;
+    }
+    .column{
+        width: 100%;
+    }
+    .footer{
+        padding: 5%;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+}
+
+@media only screen and (max-width:992px) {
+    .nav{
+        padding: 5%;
+    }
+
+    .hero{
+        padding: 0 5% 0 5%;
+    }
+    .title{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .image {
+        width: 100%;
+        height: 25rem;
+        object-fit: cover;
+
+    }
+    .column .article_photo{
+        width: 100%;
+        height: 18rem;
+        object-fit: cover;
+    }
+    .blogs{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3,1fr);
+        gap: 20px;
+        padding: 10% 0 10% 0;
+    }
+    .column{
+        width: 100%;
+    }
+    .footer{
+        padding: 5%;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+}
+
+
